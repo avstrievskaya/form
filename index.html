@@ -5,11 +5,11 @@
     <title>Cars</title>
 </head>
 <body>
-    <section id="Log in">
+    <section>
     <div>
     <fieldset>
         <legend>Log in</legend>
-    <form action="https://fom.in.ua/echo" method="POST">
+        <form action="https://fom.in.ua/echo" method="POST">
         <p><input type="text" name="uresname" placeholder="Email">
         <br>
         <input type="password" name="password" placeholder="Password">
@@ -20,17 +20,18 @@
         <br>
         <input type="submit" value="Enter">
         </p>
+        </form>
     </fieldset>
     </div>
     </section>
 
     <br>
     <br>
-    <section id="Registration">
-        <div>
+    <section>
+    <div>
     <fieldset>
         <legend>Registration</legend>
-        <form action="https://fom.in.ua/echo" method="POST"></form>
+        <form action="https://fom.in.ua/echo" method="POST">
         <p> <input type="text" name="username" placeholder="Username">
             <br>
             <input type="password" name="password" placeholder="Password">
@@ -46,16 +47,17 @@
             <br>
             <input type="submit" value="Enter">
         </p>
+    </form>
     </fieldset>
     </div>
     </section>
     <br>
     <br>
-    <section id="Search">
-        <div>
+    <section>
+    <div>
     <fieldset>
         <legend>Search</legend>
-        <form action="https://fom.in.ua/echo" method="GET"></form>
+        <form action="https://fom.in.ua/echo" method="GET">
         <p> Body style
             <select name="body style">
                 <option value="buggy">Buggy</option>
@@ -138,7 +140,7 @@
             <label for="n">New</label>
             <input type="checkbox" name="used car" id="u">
             <label for="u">Used car</label>
-            <input type="checkbox" name=""in credit id="i">
+            <input type="checkbox" name="in credit" id="i">
             <label for="i">In credit</label>
             <br>
             <p>
@@ -152,7 +154,7 @@
     <input type="checkbox" name="manual" id="manual">
     <label for="manual">Manual</label>
     <input type="checkbox" name="automatic" id="auto">
-    <label for="auti">Automatic</label>
+    <label for="auto">Automatic</label>
     <input type="checkbox" name="semi-automatic" id="semi">
     <label for="semi">Semi-automatic</label>
     <input type="checkbox" name="non-synchronous" id="non">
@@ -180,9 +182,9 @@
     <input type="checkbox" name="leather interior" id="leath">
     <label for="leath">Leather interior</label>
     <input type="submit" name="search" value="Search">
-   </fieldset>
+    </form>
+    </fieldset>
    </div>
    </section>
-    </form>
 </body>
 </html>
