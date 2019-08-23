@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Form</title>
+    <title>Cars</title>
 </head>
 <body>
+    <section>
+    <div class="form-boxes">
     <fieldset>
         <legend>Enter</legend>
     <form action="https://fom.in.ua/echo" method="POST">
@@ -19,9 +21,13 @@
         <input type="submit" value="Enter">
         </p>
     </fieldset>
+    </div>
+    </section>
 
     <br>
     <br>
+    <section>
+        <div>
     <fieldset>
         <legend>Registration</legend>
         <p> <input type="text" name="username" placeholder="Username">
@@ -40,11 +46,13 @@
             <input type="submit" value="Enter">
         </p>
     </fieldset>
+    </div>
+    </section>
     <br>
     <br>
     <fieldset>
         <legend>Search</legend>
-        <p>
+        <p> Body style
             <select name="body style">
                 <option value="buggy">Buggy</option>
                 <option value="convertible">Convertible</option>
@@ -55,38 +63,44 @@
                 <option value="microvan">Microvan</option>
                 <option value="minivan">Minivan</option>
             </select>
+            </p>
+            <br>
+            <p> Car brand
             <select name="car brand">
-                <option value="audi">audi</option>
-                <option value="bentley">bentley</option>
-                <option value="bmw"bmw></option>
-                <option value="chevrolet">chevrolet</option>
-                <option value="ferrari">ferrari</option>
-                <option value="fiat">fiat</option>
-                <option value="ford">ford</option>
-                <option value="hyundai">hyundai</option>
-                <option value="infiniti">infiniti</option>
-                <option value="jaguar">jaguar</option>
-                <option value="jeep">jeep</option>
-                <option value="kia">kia</option>
-                <option value="lexus">lexus</option>
-                <option value="honda">honda</option>
-                <option value="mazda">mazda</option>
-                <option value="mercedes-benz">mercedes-benz</option>
-                <option value="mini">mini</option>
-                <option value="nissan">nissan</option>
-                <option value="opel">opel</option>
-                <option value="peugeot">peugeot</option>
-                <option value="porsche">porsche</option>
-                <option value="renault">renault</option>
-                <option value="saturn"saturn></option>
-                <option value="smart">smart</option>
-                <option value="subaru">subaru</option>
-                <option value="suzuki">suzuki</option>
-                <option value="tesla">tesla</option>
-                <option value="toyota">toyota</option>
-                <option value="volkswagen"volkswagen></option>
-                <option value="volvo">volvo</option>
+                <option value="audi">Audi</option>
+                <option value="bentley">Bentley</option>
+                <option value="bmw">BMW</option>
+                <option value="chevrolet">Chevrolet</option>
+                <option value="ferrari">Ferrari</option>
+                <option value="fiat">Fiat</option>
+                <option value="ford">Ford</option>
+                <option value="hyundai">Hyundai</option>
+                <option value="infiniti">Infiniti</option>
+                <option value="jaguar">Jaguar</option>
+                <option value="jeep">Jeep</option>
+                <option value="kia">Kia</option>
+                <option value="lexus">Lexus</option>
+                <option value="honda">Honda</option>
+                <option value="mazda">Mazda</option>
+                <option value="mercedes-benz">Mercedes-benz</option>
+                <option value="mini">Mini</option>
+                <option value="nissan">Nissan</option>
+                <option value="opel">Opel</option>
+                <option value="peugeot">Peugeot</option>
+                <option value="porsche">Porsche</option>
+                <option value="renault">Renault</option>
+                <option value="saturn">Saturn</option>
+                <option value="smart">Smart</option>
+                <option value="subaru">Subaru</option>
+                <option value="suzuki">Suzuki</option>
+                <option value="tesla">Tesla</option>
+                <option value="toyota">Toyota</option>
+                <option value="volkswagen">Volkswagen</option>
+                <option value="volvo">Volvo</option>
             </select>
+            </p>
+            <br>
+            <p> Country
             <input type="checkbox" name="germany" value="Germany" id="g">
             <label for="g">Germany</label>
             <input type="checkbox" name="france" value="France" id="fr">
@@ -97,11 +111,37 @@
             <label for="j">Japan</label>
             <input type="checkbox" name="china" id="c">
             <label for="c">China</label>
-        </p class="form-text">
-        Price
-        <p>
-
-        </p>
+            </p>
+            <br>
+            <p>
+                Price
+                <input type="range" name="price" min="1000" max="1000000">
+                <br>
+            </p>Fuel
+            <br>
+            <input type="checkbox" name="petrop" id="p">
+            <label for="p">Patrol</label>
+            <br>
+            <input type="checkbox" name="disel fuel" id="d">
+            <label for="d">Disel fuel</label>
+            <br>
+            <input type="checkbox" name="gas" id="gas">
+            <label for="gas">Gas</label>
+            <p>
+                State
+            </p>
+            <input type="checkbox" name="new" id="n">
+            <label for="n">New</label>
+            <input type="checkbox" name="used car" id="u">
+            <label for="u">Used car</label>
+            <input type="checkbox" name=""in credit id="i">
+            <label for="i">In credit</label>
+            <br>
+            <p>
+                Year of car manufacture
+                <input type="range" name="year" min="2000" max="2019">
+                <br>
+            </p>
     </fieldset>
 
 
