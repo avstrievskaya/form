@@ -5,10 +5,10 @@
     <title>Cars</title>
 </head>
 <body>
-    <section>
-    <div class="form-boxes">
+    <section id="Log in">
+    <div>
     <fieldset>
-        <legend>Enter</legend>
+        <legend>Log in</legend>
     <form action="https://fom.in.ua/echo" method="POST">
         <p><input type="text" name="uresname" placeholder="Email">
         <br>
@@ -26,10 +26,11 @@
 
     <br>
     <br>
-    <section>
+    <section id="Registration">
         <div>
     <fieldset>
         <legend>Registration</legend>
+        <form action="https://fom.in.ua/echo" method="POST"></form>
         <p> <input type="text" name="username" placeholder="Username">
             <br>
             <input type="password" name="password" placeholder="Password">
@@ -50,8 +51,11 @@
     </section>
     <br>
     <br>
+    <section id="Search">
+        <div>
     <fieldset>
         <legend>Search</legend>
+        <form action="https://fom.in.ua/echo" method="GET"></form>
         <p> Body style
             <select name="body style">
                 <option value="buggy">Buggy</option>
@@ -142,9 +146,43 @@
                 <input type="range" name="year" min="2000" max="2019">
                 <br>
             </p>
-    </fieldset>
-
-
+    <p>
+        Transmission 
+    </p>
+    <input type="checkbox" name="manual" id="manual">
+    <label for="manual">Manual</label>
+    <input type="checkbox" name="automatic" id="auto">
+    <label for="auti">Automatic</label>
+    <input type="checkbox" name="semi-automatic" id="semi">
+    <label for="semi">Semi-automatic</label>
+    <input type="checkbox" name="non-synchronous" id="non">
+    <label for="non">Non-synchronous</label>
+    <br>
+    <p>
+        Color
+    </p>
+    <select name="color">
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="orange">Ogange</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="pink">Pink</option>
+    </select>
+    <br>
+    <p>
+        Comfort
+    </p>
+    <input type="checkbox" name="luxury" id="l">
+    <label for="l">Luxury</label>
+    <input type="checkbox" name="leather interior" id="leath">
+    <label for="leath">Leather interior</label>
+    <input type="submit" name="search" value="Search">
+   </fieldset>
+   </div>
+   </section>
     </form>
 </body>
 </html>
