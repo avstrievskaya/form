@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <title>Cars</title>
 </head>
-<body>
-    <section>
-    <div>
-    <fieldset>
-        <legend>Log in</legend>
-        <form action="https://fom.in.ua/echo" method="POST">
-        <p><input type="text" name="uresname" placeholder="Email">
+<body></body>
+    <form action="https://fom.in.ua/echo" method="POST">
+    Log in
+    <br>
+        <input type="text" name="uresname" placeholder="Email">
         <br>
         <input type="password" name="password" placeholder="Password">
         <br>
@@ -19,46 +17,34 @@
         </label>
         <br>
         <input type="submit" value="Enter">
-        </p>
-        </form>
-    </fieldset>
-    </div>
-    </section>
-
-    <br>
-    <br>
-    <section>
-    <div>
-    <fieldset>
-        <legend>Registration</legend>
-        <form action="https://fom.in.ua/echo" method="POST">
-        <p> <input type="text" name="username" placeholder="Username">
-            <br>
-            <input type="password" name="password" placeholder="Password">
-            <br>
-            <input type="password" name="password" placeholder="Confirm passsword">
-            <br>
-            <input type="radio" name="gender" value="male" id="m">
-            <label for="m">male</label>
-            <input type="radio" name="gender" value="female" id="f">
-            <label for="f">female</label>
-            <br>
-            <input type="file" name="avatar">
-            <br>
-            <input type="submit" value="Enter">
-        </p>
     </form>
-    </fieldset>
-    </div>
-    </section>
     <br>
     <br>
-    <section>
-    <div>
-    <fieldset>
-        <legend>Search</legend>
-        <form action="https://fom.in.ua/echo" method="GET">
-        <p> Body style
+    <form action="https://fom.in.ua/echo" method="POST">
+        Registration
+        <br>
+        <input type="text" name="username" placeholder="Username">
+        <br>
+        <input type="password" name="password" placeholder="Password">
+        <br>
+        <input type="password" name="password" placeholder="Confirm passsword">
+        <br>
+        <input type="radio" name="gender" value="male" id="m">
+        <label for="m">male</label>
+        <input type="radio" name="gender" value="female" id="f">
+        <label for="f">female</label>
+        <br>
+        <input type="file" name="avatar">
+        <br>
+        <input type="submit" value="Enter">
+    </form>
+    <br>
+    <br>
+    <form action="https://fom.in.ua/echo" method="GET">
+        Search
+        <br>
+        <fieldset>
+            <legend>Body style</legend>
             <select name="body style">
                 <option value="buggy">Buggy</option>
                 <option value="convertible">Convertible</option>
@@ -69,9 +55,10 @@
                 <option value="microvan">Microvan</option>
                 <option value="minivan">Minivan</option>
             </select>
-            </p>
+        </fieldset>
             <br>
-            <p> Car brand
+            <fieldset>
+                <legend>Car brand</legend>
             <select name="car brand">
                 <option value="audi">Audi</option>
                 <option value="bentley">Bentley</option>
@@ -104,9 +91,10 @@
                 <option value="volkswagen">Volkswagen</option>
                 <option value="volvo">Volvo</option>
             </select>
-            </p>
+            </fieldset>
             <br>
-            <p> Country
+            <fieldset>
+                <legend>Country</legend>
             <input type="checkbox" name="germany" value="Germany" id="g">
             <label for="g">Germany</label>
             <input type="checkbox" name="france" value="France" id="fr">
@@ -117,14 +105,15 @@
             <label for="j">Japan</label>
             <input type="checkbox" name="china" id="c">
             <label for="c">China</label>
-            </p>
+            </fieldset>
             <br>
-            <p>
-                Price
-                <input type="range" name="price" min="1000" max="1000000">
+            <fieldset>
+                <legend>Price</legend>
+                1000<input type="range" name="price" min="1000" max="1000000">1000000
+            </fieldset>
                 <br>
-            </p>Fuel
-            <br>
+                <fieldset>
+                    <legend>Fuel</legend>
             <input type="checkbox" name="petrop" id="p">
             <label for="p">Patrol</label>
             <br>
@@ -133,58 +122,57 @@
             <br>
             <input type="checkbox" name="gas" id="gas">
             <label for="gas">Gas</label>
-            <p>
-                State
-            </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>State</legend>
             <input type="checkbox" name="new" id="n">
             <label for="n">New</label>
             <input type="checkbox" name="used car" id="u">
             <label for="u">Used car</label>
             <input type="checkbox" name="in credit" id="i">
             <label for="i">In credit</label>
+                </fieldset>
             <br>
-            <p>
-                Year of car manufacture
-                <input type="range" name="year" min="2000" max="2019">
+            <fieldset>
+                <legend>Year of car manufacture</legend>
+                2000<input type="range" name="year" min="2000" max="2019">2019
+            </fieldset>
                 <br>
-            </p>
-    <p>
-        Transmission 
-    </p>
-    <input type="checkbox" name="manual" id="manual">
-    <label for="manual">Manual</label>
-    <input type="checkbox" name="automatic" id="auto">
-    <label for="auto">Automatic</label>
-    <input type="checkbox" name="semi-automatic" id="semi">
-    <label for="semi">Semi-automatic</label>
-    <input type="checkbox" name="non-synchronous" id="non">
-    <label for="non">Non-synchronous</label>
-    <br>
-    <p>
-        Color
-    </p>
-    <select name="color">
-        <option value="blue">Blue</option>
-        <option value="green">Green</option>
-        <option value="black">Black</option>
-        <option value="white">White</option>
-        <option value="orange">Ogange</option>
-        <option value="red">Red</option>
-        <option value="yellow">Yellow</option>
-        <option value="pink">Pink</option>
-    </select>
-    <br>
-    <p>
-        Comfort
-    </p>
-    <input type="checkbox" name="luxury" id="l">
-    <label for="l">Luxury</label>
-    <input type="checkbox" name="leather interior" id="leath">
-    <label for="leath">Leather interior</label>
-    <input type="submit" name="search" value="Search">
+                <fieldset>
+                    <legend>Transmission</legend>
+            <input type="checkbox" name="manual" id="manual">
+            <label for="manual">Manual</label>
+            <input type="checkbox" name="automatic" id="auto">
+            <label for="auto">Automatic</label>
+            <input type="checkbox" name="semi-automatic" id="semi">
+            <label for="semi">Semi-automatic</label>
+            <input type="checkbox" name="non-synchronous" id="non">
+            <label for="non">Non-synchronous</label>
+                </fieldset>
+            <br>
+            <fieldset>
+                <legend>Color</legend>
+                <select name="color">
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="orange">Ogange</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="pink">Pink</option>
+                </select>
+            </fieldset>
+        <br>
+        <fieldset>
+            <legend>Comfort</legend>
+            <input type="checkbox" name="luxury" id="l">
+            <label for="l">Luxury</label>
+            <input type="checkbox" name="leather interior" id="leath">
+            <label for="leath">Leather interior</label>
+            <input type="submit" name="search" value="Search">
+            </fieldset>
     </form>
-    </fieldset>
-   </div>
-   </section>
 </body>
 </html>
